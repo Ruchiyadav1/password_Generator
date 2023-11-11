@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body class=" bg-slate-950">
+    <div class=" flex items-center justify-center mt-20 ">
+        <div class="max-w-md w-full p-8 bg-gray-800 shadow-lg shadow-yellow-800 rounded-md">
+            <h1 class="text-3xl font-bold mb-6 text-yellow-600">Password Generator</h1>
+            <div class="mb-4">
+                <label for="passwordLength" class="block text-md font-medium text-gray-300 mb-4">Password Length</label>
+                <input type="number" id="passwordLength" class="mt-1 p-2 w-full border rounded-md">
+            </div>
+            <div class="mb-4">
+                <label class="block text-md font-medium text-gray-300 mb-4">Include:</label>
+                <div class="flex flex-col space-y-4">
+                    <div class=" flex ">
+                        <input type="checkbox" id="uppercase" class="text-indigo-600">
+                        <label for="uppercase" class="text-sm text-gray-200 mx-4">Uppercase</label>
+                    </div>
+                    <div class=" flex ">
+                        <input type="checkbox" id="lowercase" class="text-indigo-600">
+                        <label for="lowercase" class="text-sm text-gray-200 mx-4">Lowercase</label>
+                     </div>
+                     <div class=" flex ">
+                        <input type="checkbox" id="numbers" class="text-indigo-600">
+                        <label for="numbers" class="text-sm text-gray-200 mx-4">Numbers</label>
+                     </div>
+                     <div class=" flex ">
+                        <input type="checkbox" id="symbols" class="text-indigo-600">
+                        <label for="symbols" class="text-sm text-gray-200 mx-4">Symbols</label>
+                     </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <button id="generateBtn" class="w-full bg-indigo-600 text-white p-2 rounded-md">Generate Password</button>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-medium text-gray-300 mb-3">Generated Password</label>
+                <input type="text" id="password" class="mt-1 p-2 w-full border rounded-md" readonly>
+            </div>
+            <div>
+                <button id="copyBtn" class="w-full bg-blue-700 text-white p-2 rounded-md">Copy Password</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
